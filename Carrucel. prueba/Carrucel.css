@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total de la ventana */
+    margin: 0;
+    background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+.carousel {
+    width: 80%; /* Ajusta el tamaño del carrusel */
+    max-width: 600px; /* Máximo ancho */
+}
+
+.carousel-item img {
+    height: 400px; /* Ajusta la altura deseada */
+    object-fit: cover;
+}

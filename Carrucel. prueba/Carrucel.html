@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Pizzas</title>
+    <link rel="stylesheet" href="Carrucel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="pizzaCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="margarita.jpeg" class="d-block w-100" alt="Pizza Margarita">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pizza Margarita</h5>
+                <p>Deliciosa pizza con tomate fresco y albahaca.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Pizza.jpg" class="d-block w-100" alt="Pizza Pepperoni">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pizza Pepperoni</h5>
+                <p>Clásica y siempre favorita.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Vegetariana.jpeg" class="d-block w-100" alt="Pizza Vegetariana">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pizza Vegetariana</h5>
+                <p>Una explosión de sabores con ingredientes frescos.</p>
+            </div>
+        </div>
+        <!-- Agrega más elementos de carrusel según sea necesario -->
+    </div>
+    <a class="carousel-control-prev" href="#pizzaCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#pizzaCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
