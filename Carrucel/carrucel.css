@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 25%; /* Ajusta el tamaño de cada tarjeta para que se muestren 4 a la vez */
+    padding: 10px;
+}
+
+.carousel-card {
+    background-color: #e2f4e7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    z-index: 10; /* Asegura que las flechas estén sobre las tarjetas */
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+.carousel-arrow:nth-child(1) {
+    left: 10px;
+}
+
+.carousel-arrow:nth-child(3) {
+    right: 10px;
+}
